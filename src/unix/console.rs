@@ -28,6 +28,6 @@ pub fn get_terminal_size() -> Result<Size, isize> {
             cols: us.cols
         })
     } else {
-        Err(r)
+        Err(r.try_into().unwrap())
     }
 }

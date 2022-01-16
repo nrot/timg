@@ -9,7 +9,7 @@ mod console;
 pub use console::get_terminal_size;
 
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Size {
     pub rows: u16,
     pub cols: u16
